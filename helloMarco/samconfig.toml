@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "helloMarcoApp"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1pyas6tx58odx"
+s3_prefix = "helloMarcoApp"
+region = "eu-central-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["HelloWorldFunction=765984096791.dkr.ecr.eu-central-1.amazonaws.com/hellomarcorepo"]
